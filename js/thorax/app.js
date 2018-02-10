@@ -38,6 +38,13 @@ var view = new Thorax.View({
 layout.setView(view);
 
 
+var profileModle = new com.apress.model.thorax.Profile({id: 'sufrue'});
+profileModle.fetch({success: function(){
+  var profileView = new com.apress.view.ThoraxProfileView({
+    model: profileModle
+  });
+  profileView.append('#profile');
+}});
 
 var timeline = new com.apress.collectin.thorax.Timeline();
 
