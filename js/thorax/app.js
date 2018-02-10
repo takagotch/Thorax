@@ -30,7 +30,6 @@ var subview = new Thorax.View({
 view.appendTo('body');
 
 
-
 var layout = new Thorax.LayoutView();
 layout.appendTo('body');
 
@@ -65,6 +64,8 @@ timeline.fetch({reset:true, success: function(){
   });
   timelineView.appendTo('#timeline-section');
 }});
+
+
 
     }),
   }),
