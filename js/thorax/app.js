@@ -1,4 +1,15 @@
-
+$(function(){
+  
+//var view = new Thorax.View({
+//  label: "Title",
+//  template: Handlebars.compile("{{label}} : {{bookname}}"),
+//
+//  model: new Thorax.Model({
+//  }),
+//});
+//view.appendTo('body');
+//});
+//
 
 var subview = new Thorax.View({
   model: new Thorax.Model({
@@ -54,6 +65,10 @@ timeline.fetch({reset:true, success: function(){
   });
   timelineView.appendTo('#timeline-section');
 }});
+
+    }),
+  }),
+});
 
 
 
