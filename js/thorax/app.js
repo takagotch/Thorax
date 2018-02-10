@@ -46,13 +46,15 @@ profileModle.fetch({success: function(){
   profileView.append('#profile');
 }});
 
-var timeline = new com.apress.collectin.thorax.Timeline();
 
-timeline.fetch({reset:tru, success: function(){
+var timeline = new com.apress.collection.thorax.Timeline();
+timeline.fetch({reset:true, success: function(){
   var timelineView = new com.apress.view.ThoraxTimelineView({
     collection: timeline
   });
   timelineView.appendTo('#timeline-section');
 }});
+
+
 
 
